@@ -1,0 +1,75 @@
+/* Variáveis de cor (tema claro por padrão) */
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #333333;
+    --cor-artigo: #ffffff;
+    --cor-primaria: #0066cc;
+    --cor-secundaria: #ff9900;
+}
+
+/* Transição suave aplicada a todos os elementos */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Botão de troca de tema */
+.btn-tema-escuro {
+    padding: 10px 15px;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo do container de artigos */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo dos artigos com box-shadow */
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-artigo);
+    padding: 20px;
+    border-radius: 8px;
+    /* Sombreamento para efeito de profundidade */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ===================================================
+   TEMA ESCURO
+   =================================================== */
+
+/* Ajuste de cores para o modo escuro */
+body.tema-escuro {
+    --cor-fundo: #121212;
+    --cor-texto: #e0e0e0;
+    --cor-artigo: #1e1e1e;
+}
+
+/* Destaque do botão de tema apenas no modo escuro */
+.tema-escuro .btn-tema-escuro {
+    background-color: var(--cor-secundaria);
+}

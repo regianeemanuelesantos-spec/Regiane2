@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+        <button class="btn-tema-escuro" onclick="alternarTema()">Alternar Tema</button>
+    </header>
+
+    <main>
+        <article>
+            <h2>Primeira Postagem</h2>
+            <p>Este é o conteúdo do primeiro post com o novo layout moderno, sombra e espaçamento aprimorado.</p>
+        </article>
+
+        <article>
+            <h2>Segunda Postagem</h2>
+            <p>Aprendemos a usar box-shadow e transições suaves para dar um toque profissional ao site.</p>
+        </article>
+    </main>
+
+    <script>
+        function alternarTema() {
+            document.body.classList.toggle('tema-escuro');
+        }
+    </script>
+</body>
+</html>
